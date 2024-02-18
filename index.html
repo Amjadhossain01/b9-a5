@@ -1,22 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>redBus</title>
+  <!-- Tailwind CSS cdn link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- daisyUI link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <!-- Font family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <style>
+    font-raleway {
+      font-family: 'Raleway', sans-serif;
+    }
+  </style>
 </head>
 
-<body>
+<body class="font-raleway">
   <header>
-
+    <section class="mt-14">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li>
+                <a>About</a>
+              </li>
+              <li><a>Destination</a></li>
+              <li><a href="">Search</a></li>
+            </ul>
+          </div>
+          <a class="lg:text-[40px] text-3xl font-extrabold text-[#030712] lg:ml-[250px]">redBus</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 gap-10 font-medium text-[#777] relative left-[140px]">
+            <li><a>Home</a></li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li><a>Destination</a></li>
+            <li><a href="">Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end lg:mr-[265px] mr-6">
+          <img class="relative left-20" src="tabler-icon-bus.svg" alt="">
+          <a class="btn text-green-500 w-24 bg-green-50 pr-10 text-lg font-bold">Bus</a>
+        </div>
+      </div>
+    </section>
+    <!-- Header banner section -->
+    <section class="mt-14 w-full">
+      <div class="ml-64">
+        <img class="w-[1380px] h-[600px] bg-gradient-to-t bg-gray-400 rounded-[32px]" src="images/banner.png" alt="">
+      </div>
+      <!-- Banner text  -->
+      <div class="text-center relative bottom-[500px]">
+        <h1 class="font-bold text-[64px] text-green-500"><span class="text-[64px] font-bold text-[#fff]">End-to-End
+            Travel with</span><br>redBus</h1>
+        <p class="text-lg text-[#fff] mb-10">Yes, you can run unit tests and view the results directly within the app.
+          The
+          <br>
+          integrated testing features
+          allow for a
+          streamlined .
+        </p>
+        <button
+          class="btn btn-success rounded-xl w-[160px] h-[60px] px-4 py-4 border-none bg-green-400 text-[#1c1c1c] font-bold text-lg">Buy
+          Tickets</button>
+      </div>
+      <!-- Three card section -->
+      <!-- Main DIV of three card -->
+      <div class="flex flex-col lg:flex-row relative lg:left-[500px] gap-8">
+        <!-- First card -->
+        <div
+          class="flex w-[285px] h-[110px] drop-shadow-md border-b-4 border-b-green-400 bg-[#fff] rounded-3xl relative bottom-[400px] pl-14 pt-5">
+          <div class="flex w-16 h-16 mr-2">
+            <img src="images/people.png" alt="">
+          </div>
+          <div>
+            <h1 class="text-[#1c1c1c] text-4xl font-bold">500K+</h1>
+            <p class="text-[#777] text-lg">Registered users</p>
+          </div>
+        </div>
+        <!-- Second card -->
+        <div
+          class="flex w-[285px] h-[110px] drop-shadow-md border-b-4 border-b-green-400 bg-[#fff] rounded-3xl relative bottom-[400px] pl-14 pt-5">
+          <div class="flex w-16 h-16 mr-2">
+            <img src="images/ticket-cupon.png" alt="">
+          </div>
+          <div>
+            <h1 class="text-[#1c1c1c] text-4xl font-bold">1.7 lacks</h1>
+            <p class="text-[#777] text-lg">Tickets sold</p>
+          </div>
+        </div>
+        <!-- Third card -->
+        <div
+          class="flex w-[285px] h-[110px] drop-shadow-md border-b-4 border-b-green-400 bg-[#fff] rounded-3xl relative bottom-[400px] pl-14 pt-5">
+          <div class="flex w-16 h-16 mr-2">
+            <img src="images/stoppage.png" alt="">
+          </div>
+          <div>
+            <h1 class="text-[#1c1c1c] text-4xl font-bold">80K+</h1>
+            <p class="text-[#777] text-lg">Rental partners</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </header>
   <main>
 
   </main>
-  <footer>
-
-  </footer>
+  <!-- Footer Section -->
+  <section class="">
+    <footer class="bg-white rounded-lg shadow dark:bg-gray-900 ">
+      <div class="w-full lg:h-96 max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between lg:pt-16">
+          <div>
+            <span
+              class="self-center lg:text-3xl text-2xl whitespace-nowrap dark:text-white mb-4 font-extrabold">redBus</span>
+            <p class="dark:text-gray-400">redBus is a digital platform to make your <br> daily commuting better.</p>
+          </div>
+          <div>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+              <div class="flex-col">
+                <p class="mb-2">Download our app</p>
+                <img src="Group 104.svg" alt="">
+              </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="">
+          <div class="flex lg:gap-96 mt-20 lg:mt-0">
+            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a
+                href="https://flowbite.com/" class="hover:underline">redBus™</a>. @all rights reserved, P-Ticket
+              services
+              limited.2024</span>
+            <div>
+              <nav>
+                <ul class="lg:flex lg:gap-5">
+                  <li class="dark:text-gray-400">Terms & condition</li>
+                  <li class="dark:text-gray-400">Return & refund policy</li>
+                  <li class="dark:text-gray-400">Privacy policy</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!-- Js file link -->
   <script src="js/interactive.js"></script>
 </body>
 
